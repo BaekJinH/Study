@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+* { margin:0; padding:0;}
+a { text-decoration: none; color:#252525;} 
+ul, li , ol {list-style: none;}
+
+body { background: #eee; }
+
+.wrap { width:100%; margin:0 auto;  }
+header { width:100%; height:70px; background-color:#fff; display:flex;  align-items: center; justify-content: space-between;}
+header #logo { width:200px; height:100%;font-size:32px; font-weight:bold; display:flex; align-items: center;}
+nav {  height:100%;}
+nav ul { display:flex;  height:100%;  }
+nav ul li { height:100%; width:120px;   border-right:1px solid #252525; text-align: center;}
+nav ul li:hover a { background-color:#000000; color:#fff; }
+nav ul li:last-child { border-right:none}
+nav ul li:first-child {   border-left:1px solid #252525; }
+nav ul li a { width:100%; height:100%; display:block; font-size:20px; line-height:70px; }
+
+
+.innerWrap { width:1200px; margin:0 auto; }
+/* section */
+section { margin-top:80px; height:700px; }
+section video { width:100%; margin-bottom:30px; }
+section > h3 { font-size:30px; text-align: center;  margin-bottom:20px; }
+section .videoWrap { display:flex; justify-content: center; }
+.videoWrap .cont { margin-right:50px; height:400px;  background-color: white; text-align: center; border: 1px solid #eee; border-radius: 20px; }
+.videoWrap .cont h4 { font-size:26px; margin-bottom:40px; }
+.videoWrap .cont p { width:100%; }
+.videoWrap > div:last-child { margin-right:0px; }
+
+/* article */
+article { margin-top:70px; height:700px;}
+article > h3 { font-size:30px; text-align: center; margin-bottom: 20px; }
+article > div { display: flex ; align-items: center; }
+article > div a { flex:1 1 50%;  height:250px; margin-right:70px; text-align: center; font-weight: bold; font-size:25px}
+article > div a:last-child { margin:0 }
+
+/* footer */
+footer { width:100% ; background-color: #fff; border-top:1px solid #eee; }
+footer .top { height:40px; border-bottom:1px solid #eee;}
+footer .bottom { height:110px; padding:30px 15px;}
+footer .bottom ul { display:flex; margin-bottom:20px; }
+footer .bottom ul li { margin-right:30px;  }
+footer .bottom ul li:hover a { color: black; font-weight:bold}
+footer .bottom p { font-size:20px; font-weight:bold }
